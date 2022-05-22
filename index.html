@@ -1,0 +1,141 @@
+<html>
+<body>
+    
+    <header>
+        <div class="you">
+        <h1>Вы это вы, вы - <span id="kto"> </span></h1>
+        </div>
+        <nav>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">туда</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">сюда</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">help</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">право</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">лево</a>
+        </nav>
+        
+        <img src="https://memepedia.ru/wp-content/uploads/2017/04/%D0%B1%D0%B0%D1%82%D1%8F-%D0%BC%D0%B5%D0%BC.jpg" >
+        
+            <img src="https://humorial.ru/images/dems/455/dem_455722.jpg">
+        
+        
+    
+        <aside>
+            <h2>Реклама</h2>
+            <img src="https://humorial.ru/images/dems/455/dem_455722.jpg">
+            <p>текст рекламы</p>
+        </aside>
+    
+    </header>
+    <main>
+        <h1>Зачем это всё надо</h1>
+        <img src="https://e7.pngegg.com/pngimages/264/213/png-clipart-amazon-com-hypnosis-android-others-miscellaneous-spiral-thumbnail.png">
+
+
+
+
+    </main>
+    <footer>
+        <p> мы повсюду </p>
+
+
+    </footer>
+</body>
+
+
+</html>
+
+<style>
+footer{
+    border: solid 1px gray;
+    border-radius: 30px;
+    padding: 15px;
+    margin: auto;
+    background-image: linear-gradient(to right,white, gray,white,gray,white);
+}
+h1, p{
+    font-family:Tahoma, sans-serif;
+    font-size: 25px;
+} 
+
+div{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 15px 10px 10px;
+    box-shadow: 15px 15px 50px 5px gray;
+}
+.you{
+    display: block;
+    position: fixed;
+    top: 10%;
+    left: 73%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 5px 5px 10px 3px gray;
+    
+}    
+nav{
+    display: block;
+    position: fixed;
+    top: 30%;
+    left: 74%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 5px 5px 10px 3px gray;
+    
+}
+a{
+    display: block;
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+    position: relative;
+    left: 20px;
+    transition: 2s;
+}
+a:hover{
+    color:red;
+    font-size: 20px;
+    margin: 4px
+}
+a::before{
+    content: url("ффф (3).png");
+    display: block;
+    
+}
+img{
+    width: 600px;
+    height: 400px;
+    margin: 10px 5px 10px 10px;
+    padding: 5px;
+    box-shadow: 15px 15px 50px 5px gray;
+    transition: 5s;
+}
+img:hover{
+    transition: 10s;
+    transform: translate(0px, 0px) rotate(7200deg);
+}
+
+body{
+    margin: 50px 50px 15px 50px;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 15px 15px 50px 5px gray;
+    border-radius: 20px;
+    border: solid 1px gray;
+}
+
+
+
+</style>
+<script>
+let imya = prompt("Ты кто-то?");
+    let login = document.getElementById("kto");
+    login.innerText = imya;
+
+</script>
