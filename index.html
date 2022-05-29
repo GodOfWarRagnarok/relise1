@@ -6,11 +6,11 @@
         <h1>Вы это вы, вы - <span id="kto"> </span></h1>
         </div>
         <nav>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">туда</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">сюда</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">help</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">право</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg">лево</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>туда</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>сюда</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>help</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>право</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>лево</a>
         </nav>
         
         <img src="https://memepedia.ru/wp-content/uploads/2017/04/%D0%B1%D0%B0%D1%82%D1%8F-%D0%BC%D0%B5%D0%BC.jpg" >
@@ -104,9 +104,12 @@ a:hover{
     font-size: 20px;
     margin: 4px
 }
-a::before{
-    content: url("|->");
-    display: block;
+.strelka{
+    visibility:hidden;
+}
+.strelka:hover{
+    visibility: visible;
+}
     
     
 }
