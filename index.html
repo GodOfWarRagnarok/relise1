@@ -3,14 +3,14 @@
     
     <header>
         <div class="you">
-        <h1>Вы это вы, вы - <span id="kto"> </span></h1>
+        <h1 class="title-example">Вы это вы, вы - <span id="kto"> </span></h1>
         </div>
         <nav>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>туда</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>сюда</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>help</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>право</a>
-            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">|-></span>лево</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">-> </span>туда</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">-> </span>сюда</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">-> </span>help</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">-> </span>право</a>
+            <a href="https://humorial.ru/images/dems/455/dem_455722.jpg"><span class="strelka">-> </span>лево</a>
         </nav>
         
         <img src="https://memepedia.ru/wp-content/uploads/2017/04/%D0%B1%D0%B0%D1%82%D1%8F-%D0%BC%D0%B5%D0%BC.jpg" >
@@ -118,7 +118,39 @@ a.strelka{
     
     
 }
-    
+h3.title-example{
+    font-size: 1em; /* Размер шрифта */
+    color: #5a5a5a; /* Цвет заголовка */
+    text-align: center; /* Текст по центру */
+}
+/*  CSS код для линии над заголовком */
+h3.title-example:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h3.title-example:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+/*  CSS код для линии под заголовком */
+h3.title-example:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h3.title-example:hover:after {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}   
 .underline-one {
 	color: #00bfff; /* Цвет обычной ссылки */
     position: relative;
